@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@fontsource/archivo/500.css";
+@import "@fontsource/chivo-mono/500.css";
+@import "@fontsource/roboto/500.css";
+
+@theme {
+  --font-archivo: "Archivo", sans-serif;
+  --font-chivo: "Chivo Mono", monospace;
+  --font-roboto: "Roboto", sans-serif;
+}
