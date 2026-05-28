@@ -11,7 +11,7 @@ import banking1 from "../assets/banking1.png";
 import banking2 from "../assets/banking2.png";
 import banking3 from "../assets/banking3.png";
 
-import Pattern from "../assets/vector.png";
+import Pattern from "../assets/Vector.png";
 
 export const brands = [
     { name: "SHELLS", icon: ShieldCheck },

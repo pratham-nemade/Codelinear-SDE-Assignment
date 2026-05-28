@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import CoreBankingSectionimg from "../../assets/coreBankingSection.png";
+import CoreBankingSectionimg from "../../assets/CoreBankingSection.png";
 import Button from "../ui/Button";
 import TextLink from "../ui/TextLink";
 
