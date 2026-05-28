@@ -8,3 +8,7 @@
   --font-chivo: "Chivo Mono", monospace;
   --font-roboto: "Roboto", sans-serif;
 }
+
+body {
+    overflow-x: hidden;
+}

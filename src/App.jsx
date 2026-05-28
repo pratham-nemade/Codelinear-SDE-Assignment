@@ -1,12 +1,14 @@
-import CaseStudies from "./component/CaseStudies";
-import CoreBankingSection from "./component/CoreBankingSection";
-import CTA from "./component/CTA";
-import CTASection from "./component/CTASection";
-import FeatureSection from "./component/FeatureSection";
-import HeroSection from "./component/HeroSection";
-import N7Footer from "./component/N7Footer";
-import Navbar from "./component/Navbar";
-import SolutionsSection from "./component/SolutionsSection";
+import Navbar from "./component/layout/Navbar";
+import HeroSection from "./component/sections/HeroSection";
+import SolutionsSection from "./component/sections/SolutionsSection";
+import CoreBankingSection from "./component/sections/CoreBankingSection";
+import FeatureSection from "./component/sections/FeatureSection";
+import CTA from "./component/sections/CTA";
+import DigitalBanking from "./component/sections/DigitalBanking";
+import Insights from "./component/sections/Insights";
+import CaseStudies from "./component/sections/CaseStudies";
+import CTASection from "./component/sections/CTASection";
+import N7Footer from "./component/layout/N7Footer";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
       <SolutionsSection />
       <CoreBankingSection />
       <FeatureSection/>
-      <CTASection/>
-      <CaseStudies/>
       <CTA/>
+      <DigitalBanking/>
+      <Insights/>
+      <CaseStudies/>
+      <CTASection/>
       <N7Footer/>
     </div>
   );

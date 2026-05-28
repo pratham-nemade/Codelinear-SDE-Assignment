@@ -1,26 +1,11 @@
 import React from "react";
-import FeatureSectionImg from "../assets/feature.png";
+import FeatureSectionImg from "../../assets/feature.png";
+import { featureColumns } from "../../constants/constants";
 
 const gradientBorder = {
     background: "linear-gradient(106.53deg, #00B4FD -5.68%, #003ACE 86.98%)",
     padding: "1.05px",
 };
-
-const featureColumns = [
-    [
-        "Customer-On Boarding",
-        "Managing deposits and withdrawals",
-        "Transaction management",
-        "Interest Calculation",
-        "Payments processing (cash, cheques, mandates, NEFT, RTGS etc)",
-    ],
-    [
-        "CRM Activities",
-        "Configuring New Banking Products",
-        "Loan disbursal and Loan management",
-        "Establishing criteria for minimum balances, interest rates, number of withdrawals allowed and so on.",
-    ],
-];
 
 const GradientCheckIcon = () => (
     <svg

@@ -1,39 +1,31 @@
 import React from "react";
-import heroImage from "../assets/hero.png";
-import { ShieldCheck, Layers3, Globe, Sparkles, Waves, Hexagon } from "lucide-react";
+import heroImage from "../../assets/hero.png";
+import { brands } from "../../constants/constants";
+import Button from "../ui/Button";
 
 const HeroSection = () => {
-    const brands = [
-        { name: "SHELLS", icon: ShieldCheck },
-        { name: "SmartFinder", icon: Layers3 },
-        { name: "Zoomerr", icon: Globe },
-        { name: "ArtVenue", icon: Sparkles },
-        { name: "kontrastr", icon: Hexagon },
-        { name: "WAVESMARATHON", icon: Waves },
-    ];
-
     return (
         <section className="relative flex min-h-screen w-full flex-col overflow-hidden">
-            <div className="relative mx-auto flex w-full max-w-360 flex-1 flex-col justify-center px-6 pt-28 lg:flex-row lg:items-center lg:px-16">
+            <div className="mx-auto flex w-full max-w-360 flex-1 flex-col justify-center px-5 pt-28 sm:px-6 lg:flex-row lg:items-center lg:px-12 xl:px-16">
                 <div className="w-full lg:w-1/2">
-                    <h1 className="font-archivo text-[2.1rem] font-light leading-[1.02] tracking-[-0.03em] text-[#E9F4F9] sm:text-[2.6rem] md:text-[3rem] xl:text-[4rem] text-center lg:text-left">
+                    <h1 className="font-archivo text-center text-[2.1rem] font-light leading-[1.02] tracking-[-0.03em] text-[#E9F4F9] sm:text-[2.6rem] md:text-[3rem] lg:text-left xl:text-[4rem]">
                         The new foundation
                         <br />
                         of modern banking
                     </h1>
 
-                    <p className="font-archivo mt-5 max-w-107.5 text-[15px] leading-6 text-[#E9F4F9] sm:text-[16px] text-center mx-auto lg:text-left lg:mx-0">
+                    <p className="font-archivo mx-auto mt-5 max-w-107.5 text-center text-[15px] leading-6 text-[#E9F4F9] sm:text-[16px] lg:mx-0 lg:text-left">
                         We drive innovation and growth, provide seamless customer experience and operational excellence
                     </p>
 
                     <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                        <button className="font-chivo cursor-pointer rounded-xl bg-[linear-gradient(106.53deg,#00B4FD_-5.68%,#003ACE_86.98%)] px-8 py-3 text-[14px] uppercase tracking-[0.14em] text-white sm:mt-10 sm:px-8 sm:text-[14px] ">
+                        <Button variant="primary">
                             Request Demo
-                        </button>
+                        </Button>
 
-                        <button className="font-chivo cursor-pointer rounded-xl border border-[#E9F4F9] px-8 py-3 text-[14px] uppercase tracking-[0.14em] text-white sm:mt-10 sm:px-8 transition-all duration-300 hover:bg-white hover:text-black sm:text-[14px]">
+                        <Button variant="outline">
                             Contact Us
-                        </button>
+                        </Button>
                     </div>
                 </div>
 
@@ -48,7 +40,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="relative mx-auto w-full max-w-360 px-6 pb-8 pt-6 lg:px-16">
+            <div className="mx-auto w-full max-w-360 px-5 pb-8 pt-6 sm:px-6 lg:px-12 xl:px-16">
                 <p className="font-archivo mb-5 text-[14px] font-semibold text-[#9CA3AF]">
                     Trusted By:
                 </p>

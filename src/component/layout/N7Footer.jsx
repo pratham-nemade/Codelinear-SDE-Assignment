@@ -1,51 +1,18 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import FooterLogo from "../assets/N7.png";
-
-const offices = [
-    {
-        city: "London",
-        text: "Linktia Infosystems Ltd – CB7, 26 Main Road Sundridge, TN14 6EP, England, United Kingdom.",
-    },
-    {
-        city: "Dubai",
-        text: "Linktia Infosystems Ltd – CB7, Jumeirah Business Center 5, Cluster W, Jumeirah Lakes Towers, Dubai, United Arab Emirates",
-    },
-    {
-        city: "Pune",
-        text: "Linktia Infosystems Ltd – CB7, Nirmal, Anand Nagar, Suncity Road, Pune, Maharashtra, 411041, India",
-    },
-];
-
-const solutions = [
-    "Core Banking CB7",
-    "Digital Banking N7",
-    "Open Banking",
-    "Loan Origination System",
-    "Loan Management System",
-    "Digital Transformation",
-];
-
-const banking = [
-    "About Us",
-    "Solutions",
-    "Contact",
-    "Company",
-    "Careers",
-    "Insights",
-    "Core Team",
-    "Brand Center",
-];
-
-const socials = ["LinkedIn", "X"];
+import FooterLogo from "../../assets/N7.png";
+import {
+    banking,
+    Footersolutions,
+    offices,
+    socials,
+} from "../../constants/constants";
 
 const Footer = () => {
     return (
         <footer className="overflow-hidden text-white">
-            <div className="mx-auto max-w-360 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 pt-14 sm:pt-16 lg:pt-20 pb-6 sm:pb-8">
-
+            <div className="mx-auto w-full max-w-360 px-5 pb-6 pt-14 sm:px-6 sm:pb-8 sm:pt-16 lg:px-12 lg:pt-20 xl:px-16">
                 <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
-
                     <div className="flex shrink-0 justify-center lg:w-75 lg:justify-start xl:w-100">
                         <img
                             src={FooterLogo}
@@ -55,7 +22,6 @@ const Footer = () => {
                     </div>
 
                     <div className="min-w-0 flex-1">
-
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                             {offices.map((office, index) => (
                                 <div key={index}>
@@ -63,7 +29,7 @@ const Footer = () => {
                                         {office.city}
                                     </h3>
 
-                                    <p className="mt-2 font-archivo text-sm leading-6 text-[#E9F4F9] opacity-80">
+                                    <p className="font-archivo mt-2 text-sm leading-6 text-[#E9F4F9] opacity-80">
                                         {office.text}
                                     </p>
                                 </div>
@@ -71,14 +37,13 @@ const Footer = () => {
                         </div>
 
                         <div className="mt-14 grid grid-cols-1 gap-8 sm:mt-16 sm:grid-cols-3 lg:mt-20 lg:gap-10">
-
                             <div>
-                                <h3 className="mb-4 font-archivo text-base font-medium text-[#E9F4F9] sm:text-lg">
+                                <h3 className="font-archivo mb-4 text-base font-medium text-[#E9F4F9] sm:text-lg">
                                     Solutions
                                 </h3>
 
                                 <div>
-                                    {solutions.map((item, index) => (
+                                    {Footersolutions.map((item, index) => (
                                         <div
                                             key={index}
                                             className="group flex cursor-pointer items-center justify-between gap-2 pb-2.5"
@@ -97,7 +62,7 @@ const Footer = () => {
                             </div>
 
                             <div>
-                                <h3 className="mb-4 font-archivo text-base font-medium text-[#E9F4F9] sm:text-lg">
+                                <h3 className="font-archivo mb-4 text-base font-medium text-[#E9F4F9] sm:text-lg">
                                     N7 Banking
                                 </h3>
 
@@ -121,7 +86,7 @@ const Footer = () => {
                             </div>
 
                             <div>
-                                <h3 className="mb-4 font-archivo text-base font-medium text-[#E9F4F9] sm:text-lg">
+                                <h3 className="font-archivo mb-4 text-base font-medium text-[#E9F4F9] sm:text-lg">
                                     Our Socials
                                 </h3>
 
@@ -143,7 +108,6 @@ const Footer = () => {
                                     ))}
                                 </div>
                             </div>
-
                         </div>
 
                         <div className="mt-12 border-t border-white/10 pt-6">
@@ -155,7 +119,6 @@ const Footer = () => {
                                 13100992]
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
