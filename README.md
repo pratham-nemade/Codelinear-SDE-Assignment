@@ -89,4 +89,4 @@ The project is deployed using Vercel.
 ## Submission Links
 
 * GitHub Repository: https://github.com/pratham-nemade/Codelinear-SDE-Assignment
-* Live Demo: <add-link>
+* Live Demo: https://codelinear-sde-assignment-jbo3.vercel.app
